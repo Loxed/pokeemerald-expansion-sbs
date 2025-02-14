@@ -6,35 +6,6 @@ If you run into trouble, ask for help on Discord (see [README.md](README.md)).
 
 After completing the install instructions for your OS, proceed to [Building pokeemerald-expansion](#building-pokeemerald-expansion).
 
-## Windows
-**Windows needs one of the systems to build the project**
-
-**A note of caution**: As Windows 7 and Windows 8 are officially unsupported by Microsoft, some maintainers are unwilling to maintain the Windows 7/8 instructions. Thus, these instructions may break in the future with fixes taking longer than fixes to the Windows 10/11 instructions.
-
-On Windows, the project can be built using the following systems:
-- WSL2, fastest
-- WSL1, 7 times slower than WSL2
-- Msys2, 20 times slower than WSL2 (**NOTE**: Currently broken on pret upstream)
-- Cygwin, 30 timer slower than WSL2 (**NOTE**: Currently broken on pret upstream)
-
-**NOTE**: Only WSL systems are recommended.
-
-[WSL Install instructions](docs/install/windows/WSL.md)
-
-[Msys2 Install instructions](docs/install/windows/MSYS2.md)
-
-[Cygwin Install instructions](docs/install/windows/CYGWIN.md)
-
-## Linux
-The project can be built on any Linux distribution.
-Distributions with instructions:
-- [Ubuntu](docs/install/linux/UBUNTU.md)
-- [Debian](docs/install/linux/DEBIAN.md)
-- [Arch Linux](docs/install/linux/ARCH_LINUX.md)
-- [NixOS](docs/install/linux/NIXOS.md)
-
-Other distributions have to infer what to do from [general instructions](docs/install/linux/OTHERS.md).
-
 ## Mac
 Some extra considerations exist to get the testing system working.
 
