@@ -70,7 +70,7 @@ static const struct WindowTemplate sFieldRegionMapWindowTemplates[] =
 {
     [WIN_MAPSEC_NAME] = {
         .bg = 0,
-        .tilemapLeft = 17,
+        .tilemapLeft = 1,
         .tilemapTop = 17,
         .width = 12,
         .height = 2,
@@ -79,7 +79,7 @@ static const struct WindowTemplate sFieldRegionMapWindowTemplates[] =
     },
     [WIN_TITLE] = {
         .bg = 0,
-        .tilemapLeft = 22,
+        .tilemapLeft = 1,
         .tilemapTop = 1,
         .width = 7,
         .height = 2,
@@ -152,7 +152,8 @@ static void FieldUpdateRegionMap(void)
         case 1:
             DrawStdFrameWithCustomTileAndPalette(WIN_TITLE, FALSE, 0x27, 0xd);
             offset = GetStringCenterAlignXOffset(FONT_NORMAL, gText_Hoenn, 0x38);
-            AddTextPrinterParameterized(WIN_TITLE, FONT_NORMAL, gText_Hoenn, offset, 1, 0, NULL);
+            AddTextPrinterParameterized(WIN_TITLE, FONT_NORMAL, gText_Hoenn, offset, 1, 0, NULL); //centered region text
+            // AddTextPrinterParameterized(WIN_TITLE, FONT_NORMAL, gText_Hoenn, 0, 1, 0, NULL); // left-aligned
             ScheduleBgCopyTilemapToVram(0);
             DrawStdFrameWithCustomTileAndPalette(WIN_MAPSEC_NAME, FALSE, 0x27, 0xd);
             PrintRegionMapSecName();
