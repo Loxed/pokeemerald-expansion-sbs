@@ -211,6 +211,7 @@
 #define METATILE_General_CaveEntrance_Bottom   0x0A7
 #define METATILE_General_CaveEntrance_Left     0x09F
 #define METATILE_General_CaveEntrance_Right    0x02A
+#define METATILE_General_CaveEntrance_Top      0x05C
 #define METATILE_General_Door                  0x021
 #define METATILE_General_Door_Contest          0x1DB
 #define METATILE_General_Door_Gym              0x1CD
